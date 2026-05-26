@@ -551,6 +551,9 @@ and gives one bounded role responsibility for improving the rules themselves.
 
 - [ARCHITECTURE.md](ARCHITECTURE.md): a practical architecture for implementing
   the Curator Agent described in this paper.
+- [agents/](agents/): hierarchical agent roles for the proposed system.
+- [skills/](skills/): reusable operating skills for task-bias auditing,
+  sitemap governance, and validation review.
 
 ## References
 

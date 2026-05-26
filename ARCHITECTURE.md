@@ -16,17 +16,56 @@ The goal is to reduce task bias: the tendency for coding agents to keep working
 on surfaces that are recent, salient, well-instrumented, or easy to measure
 while other project surfaces remain uninspected.
 
+## Repository Architecture
+
+This repository uses a hierarchy-first layout. Agent roles live under
+`agents/`, and reusable operating skills live under `skills/`.
+
+```text
+agents/
+  00-system-chair/
+    agent.md
+  10-curator-agent/
+    agent.md
+  20-orchestrator-agent/
+    agent.md
+  30-developer-agent/
+    agent.md
+  40-validator-agent/
+    agent.md
+
+skills/
+  task-bias-audit/
+    SKILL.md
+  sitemap-governance/
+    SKILL.md
+  validation-audit/
+    SKILL.md
+```
+
+The numbers are intentional. They make authority visible before any runtime or
+prompting style is chosen. Lower numbers set mission and policy. Higher numbers
+execute or verify bounded work.
+
 ## System Roles
 
 ```text
-AI Sitemap
-  -> Orchestrator
-      -> Developer Agent
+System Chair
+  -> Curator Agent
+      -> Orchestrator
+          -> Developer Agent
           -> Validator Agent
               -> AI Sitemap update
 
 Curator Agent observes the full loop and updates the meta-layer.
 ```
+
+### System Chair
+
+The System Chair owns the mission boundary and the final acceptance standard.
+It exists to keep the curator from becoming an unbounded manager. The chair
+does not tune routine policy weights; it reviews high-impact curator decisions
+and decides whether the system should continue, stop, or escalate to a human.
 
 ### AI Sitemap
 
@@ -37,7 +76,7 @@ validation evidence, and risk levels.
 ### Orchestrator
 
 The orchestrator chooses the next bounded task from the sitemap. It applies a
-visible priority policy rather than relying on conversational memory.
+visible priority policy rather than relying on recent conversational context.
 
 ### Developer Agent
 
