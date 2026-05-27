@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+  <title id="title">Evaluation matrix</title>
+  <desc id="desc">A matrix comparing task-bias control conditions across coverage, evidence density, false completion risk, and overhead.</desc>
+  <rect width="980" height="420" fill="#ffffff"/>
+  <text x="54" y="54" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Evaluation Matrix</text>
+  <text x="54" y="82" font-family="Arial, sans-serif" font-size="14" fill="#475569">Compare work allocation and evidence quality, not only final output polish.</text>
+
+  <g font-family="Arial, sans-serif" font-size="13">
+    <rect x="230" y="116" width="166" height="46" fill="#f1f5f9"/>
+    <rect x="396" y="116" width="166" height="46" fill="#f1f5f9"/>
+    <rect x="562" y="116" width="166" height="46" fill="#f1f5f9"/>
+    <rect x="728" y="116" width="166" height="46" fill="#f1f5f9"/>
+    <text x="313" y="144" text-anchor="middle" font-weight="700" fill="#334155">No sitemap</text>
+    <text x="479" y="144" text-anchor="middle" font-weight="700" fill="#334155">Prompted sitemap</text>
+    <text x="645" y="136" text-anchor="middle" font-weight="700" fill="#334155">Separated</text>
+    <text x="645" y="154" text-anchor="middle" font-weight="700" fill="#334155">fixed policy</text>
+    <text x="811" y="136" text-anchor="middle" font-weight="700" fill="#334155">Separated</text>
+    <text x="811" y="154" text-anchor="middle" font-weight="700" fill="#334155">plus curator</text>
+
+    <text x="84" y="204" font-weight="700" fill="#334155">Node coverage</text>
+    <text x="84" y="256" font-weight="700" fill="#334155">Evidence density</text>
+    <text x="84" y="308" font-weight="700" fill="#334155">False completion risk</text>
+    <text x="84" y="360" font-weight="700" fill="#334155">Operating overhead</text>
+  </g>
+
+  <g stroke="#e2e8f0" stroke-width="1">
+    <rect x="230" y="162" width="664" height="208" fill="none"/>
+    <line x1="396" y1="162" x2="396" y2="370"/>
+    <line x1="562" y1="162" x2="562" y2="370"/>
+    <line x1="728" y1="162" x2="728" y2="370"/>
+    <line x1="230" y1="214" x2="894" y2="214"/>
+    <line x1="230" y1="266" x2="894" y2="266"/>
+    <line x1="230" y1="318" x2="894" y2="318"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <rect x="250" y="176" width="126" height="24" rx="12" fill="#fee2e2"/><text x="313" y="193" fill="#991b1b">low</text>
+    <rect x="416" y="176" width="126" height="24" rx="12" fill="#fef3c7"/><text x="479" y="193" fill="#713f12">medium</text>
+    <rect x="582" y="176" width="126" height="24" rx="12" fill="#dcfce7"/><text x="645" y="193" fill="#14532d">high</text>
+    <rect x="748" y="176" width="126" height="24" rx="12" fill="#bbf7d0"/><text x="811" y="193" fill="#14532d">highest</text>
+
+    <rect x="250" y="228" width="126" height="24" rx="12" fill="#fee2e2"/><text x="313" y="245" fill="#991b1b">thin</text>
+    <rect x="416" y="228" width="126" height="24" rx="12" fill="#fef3c7"/><text x="479" y="245" fill="#713f12">uneven</text>
+    <rect x="582" y="228" width="126" height="24" rx="12" fill="#dcfce7"/><text x="645" y="245" fill="#14532d">strong</text>
+    <rect x="748" y="228" width="126" height="24" rx="12" fill="#bbf7d0"/><text x="811" y="245" fill="#14532d">audited</text>
+
+    <rect x="250" y="280" width="126" height="24" rx="12" fill="#fecaca"/><text x="313" y="297" fill="#7f1d1d">high</text>
+    <rect x="416" y="280" width="126" height="24" rx="12" fill="#fed7aa"/><text x="479" y="297" fill="#9a3412">medium</text>
+    <rect x="582" y="280" width="126" height="24" rx="12" fill="#dbeafe"/><text x="645" y="297" fill="#1e3a8a">lower</text>
+    <rect x="748" y="280" width="126" height="24" rx="12" fill="#dcfce7"/><text x="811" y="297" fill="#14532d">lowest</text>
+
+    <rect x="250" y="332" width="126" height="24" rx="12" fill="#dcfce7"/><text x="313" y="349" fill="#14532d">low</text>
+    <rect x="416" y="332" width="126" height="24" rx="12" fill="#dbeafe"/><text x="479" y="349" fill="#1e3a8a">low-mid</text>
+    <rect x="582" y="332" width="126" height="24" rx="12" fill="#fef3c7"/><text x="645" y="349" fill="#713f12">medium</text>
+    <rect x="748" y="332" width="126" height="24" rx="12" fill="#fed7aa"/><text x="811" y="349" fill="#9a3412">managed</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="300" viewBox="0 0 980 300" role="img" aria-labelledby="title desc">
+  <title id="title">Task priority equation</title>
+  <desc id="desc">A visual equation for selecting the next project node based on coverage, staleness, risk, dependency pressure, and recent focus penalty.</desc>
+  <rect width="980" height="300" fill="#0f172a"/>
+  <text x="54" y="56" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Visible Priority Function</text>
+  <text x="54" y="84" font-family="Arial, sans-serif" font-size="14" fill="#cbd5e1">The orchestrator should choose from a project-wide rule, not from whatever is nearest in context.</text>
+
+  <rect x="58" y="120" width="864" height="74" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="490" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">P(n) = wu(1 - c) + ws age(t) + wr risk + wd deps - wf recent</text>
+
+  <g font-family="Arial, sans-serif" font-size="13">
+    <rect x="72" y="222" width="150" height="38" rx="8" fill="#dbeafe"/>
+    <text x="147" y="246" text-anchor="middle" fill="#1e3a8a">under-coverage</text>
+    <rect x="238" y="222" width="128" height="38" rx="8" fill="#dcfce7"/>
+    <text x="302" y="246" text-anchor="middle" fill="#14532d">staleness</text>
+    <rect x="382" y="222" width="110" height="38" rx="8" fill="#fef3c7"/>
+    <text x="437" y="246" text-anchor="middle" fill="#713f12">risk</text>
+    <rect x="508" y="222" width="150" height="38" rx="8" fill="#e0e7ff"/>
+    <text x="583" y="246" text-anchor="middle" fill="#3730a3">dependencies</text>
+    <rect x="674" y="222" width="188" height="38" rx="8" fill="#fee2e2"/>
+    <text x="768" y="246" text-anchor="middle" fill="#991b1b">recent-focus penalty</text>
+  </g>
+</svg>

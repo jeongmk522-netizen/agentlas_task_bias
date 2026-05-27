@@ -106,6 +106,12 @@ Task bias is the systematic over-allocation of agent effort to a subset of a
 project that is more salient, recently touched, easier to evaluate, or already
 instrumented, at the expense of surfaces that remain outside the active loop.
 
+<p align="center">
+  <img src="assets/figure-allocation.svg" alt="Chart showing concentrated task allocation across project nodes">
+</p>
+
+<p align="center"><em>Figure 1. Task bias appears when agent effort concentrates on a small visible subset while many nodes remain unvisited.</em></p>
+
 In multi-page software projects, task bias appears as:
 
 - Repeated edits to already-active pages while untouched pages stay untouched.
@@ -259,6 +265,12 @@ priority =
 - recent_focus_penalty * recent_visits
 ```
 
+<p align="center">
+  <img src="assets/figure-priority-equation.svg" alt="Visual priority equation for task selection">
+</p>
+
+<p align="center"><em>Figure 2. A visible priority equation gives the orchestrator a project-wide selection rule instead of letting recency decide.</em></p>
+
 This score makes untouched, stale, risky, and blocking nodes more likely to be
 selected. It also penalizes repeated work on the same node. The exact weights
 should not be hard-coded forever. That is the bridge to the curator layer.
@@ -345,8 +357,14 @@ learning from system behavior, and adjusting policy.
           Validator Agent
                 |
                 v
-          Evidence update
+              Evidence update
 ```
+
+<p align="center">
+  <img src="assets/figure-curator-loop.svg" alt="Curator feedback loop over sitemap, policy, validation, and provisional nodes">
+</p>
+
+<p align="center"><em>Figure 3. The curator is a second-order loop: it changes the rules that shape future work, not the implementation node directly.</em></p>
 
 The curator can read the full sitemap and run history. It writes only to the
 meta layer: priority weights, schema definitions, provisional node status,
@@ -507,6 +525,12 @@ An experiment can compare four conditions:
 2. Single coding agent with a checklist or sitemap prompt.
 3. Separated orchestrator, developer, and validator with fixed policy.
 4. Separated authority plus Curator Agent.
+
+<p align="center">
+  <img src="assets/figure-evaluation-matrix.svg" alt="Evaluation matrix comparing four task-bias control conditions">
+</p>
+
+<p align="center"><em>Figure 4. The evaluation should compare not just final quality, but coverage, evidence density, and false completion risk.</em></p>
 
 The expected result is not perfect completion. The expected result is lower
 work concentration, fewer silent unvisited surfaces, better evidence density,

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+  <title id="title">Curator second-order feedback loop</title>
+  <desc id="desc">A systems diagram showing the curator observing first-order work and updating meta-rules.</desc>
+  <rect width="980" height="420" fill="#f8fafc"/>
+  <text x="54" y="54" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Second-Order Control Loop</text>
+  <text x="54" y="82" font-family="Arial, sans-serif" font-size="14" fill="#475569">The curator does not complete product nodes. It changes the rules that shape future work.</text>
+
+  <rect x="90" y="142" width="178" height="76" rx="14" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="179" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#172554">AI Sitemap</text>
+  <text x="179" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a">state + evidence</text>
+
+  <rect x="326" y="142" width="178" height="76" rx="14" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+  <text x="415" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#14532d">Orchestrator</text>
+  <text x="415" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#166534">bounded tasks</text>
+
+  <rect x="562" y="142" width="178" height="76" rx="14" fill="#fef3c7" stroke="#fbbf24" stroke-width="2"/>
+  <text x="651" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#713f12">Developer</text>
+  <text x="651" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">implementation</text>
+
+  <rect x="798" y="142" width="126" height="76" rx="14" fill="#fee2e2" stroke="#f87171" stroke-width="2"/>
+  <text x="861" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#7f1d1d">Validator</text>
+  <text x="861" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#991b1b">evidence</text>
+
+  <rect x="336" y="284" width="308" height="76" rx="16" fill="#111827"/>
+  <text x="490" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Curator Agent</text>
+  <text x="490" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#cbd5e1">policy, schema, trust, provisional nodes</text>
+
+  <path d="M268 180 H326" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M504 180 H562" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M740 180 H798" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M861 218 C861 260 210 260 179 218" stroke="#94a3b8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <path d="M240 218 C280 292 336 322 336 322" stroke="#0ea5e9" stroke-width="3" fill="none" marker-end="url(#blueArrow)"/>
+  <path d="M490 284 C490 232 415 230 415 218" stroke="#0ea5e9" stroke-width="3" fill="none" marker-end="url(#blueArrow)"/>
+  <path d="M612 284 C700 250 800 238 838 218" stroke="#0ea5e9" stroke-width="3" fill="none" marker-end="url(#blueArrow)"/>
+  <text x="710" y="300" font-family="Arial, sans-serif" font-size="12" fill="#0369a1">meta-rule updates</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0ea5e9"/>
+    </marker>
+  </defs>
+</svg>
